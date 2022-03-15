@@ -11,6 +11,6 @@ const axiosIns = axios.create({
   // headers: {'X-Custom-Header': 'foobar'}
 })
 
-Vue.prototype.$http = axiosIns
+Vue.prototype.$https = axiosIns
 
 export default axiosIns

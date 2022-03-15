@@ -273,7 +273,7 @@ export default {
       return this.sideImg
     },
   },
-  methods: {
+methods: {
   register() {
     this.$refs.registerForm.validate().then(success => {
       if (success) {
@@ -282,7 +282,7 @@ export default {
           email: this.userEmail,
           password: this.password,
           c_password: this.password
-        }).then(res => console.log(res))
+        },{emulateJSON:true}).then((res) => console.log(res)) 
       }
     })
   },
